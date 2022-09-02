@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "samsungs";
+    src: url("/public/Samsungfont/samsungsharpsans.otf");
+}
+
+html {
+    font-family: "samsungs";
+}
+
+.header {
+    @apply flex flex-col lg:flex-row justify-between items-center py-4 lg:py-6 px-4 lg:px-20 shadow-md gap-4;
+}
+
+.logo {
+    @apply text-lg lg:text-4xl font-bold text-laravel font-samsungs;
+}
+
+.menu {
+    @apply flex flex-row justify-between  text-lg;
+}
+
+.item-menu {
+    @apply px-2 lg:px-4;
+}
+
+.item-menu a,
+.item-menu button {
+    @apply text-[12px] lg:text-lg hover:text-yellow-500;
+}
+
+.form-search {
+    @apply w-full lg:w-1/2 mx-auto shadow-xl -top-12 relative rounded-lg bg-white overflow-hidden;
+}
+
+.register-now {
+    @apply inline-block border-[1px] border-white text-white py-2 px-4  uppercase mt-2  text-xl font-samsungs font-semibold transition-all ease-in duration-300 hover:bg-yellow-500 hover:border-yellow-500 hover:text-laravel;
+}
+
+.hero {
+    @apply relative h-[600px] bg-laravel flex flex-col justify-center text-center  space-y-4 mb-4;
+}
+
+.btn-search {
+    @apply h-full w-full text-white  bg-laravel hover:bg-yellow-600;
+}
+
+.error-message {
+    @apply text-red-500 text-xs mt-1;
+}
+
+.btn-send {
+    @apply bg-laravel text-white rounded py-2 px-4 hover:bg-black w-full;
+}
+
+.input-form {
+    @apply border border-gray-200 rounded p-2 w-full;
+}
+
+.other-link {
+    @apply text-pink-500 text-sm;
+}
+
+.job-single-d {
+    @apply flex flex-row justify-between items-center text-sm py-3 font-bold border-b-[1px] border-gray-200 last-of-type:border-0;
+}
+
+.job-single-d span {
+    @apply font-thin;
+}
