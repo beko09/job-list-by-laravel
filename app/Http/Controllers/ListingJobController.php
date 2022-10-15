@@ -75,7 +75,7 @@ class ListingJobController extends Controller
 
      ListingJob::create($formFields);
 
-     return redirect('/')->with('message', 'Listing created successfully!');
+     return redirect('/')->with('message', 'تم نشر الوظيفة');
      }
 
     //  Show Edit Form

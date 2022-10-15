@@ -65,7 +65,7 @@
             <ul class="mt-4 p-3">
                 <li class="job-single-d">
                     تاريخ النشر
-                    <span>{{$job->created_at->isoFormat('d/m/Y')}}</span>
+                    <span>{{$job->created_at->format('d/m/Y')}}</span>
                 </li>
                 <li class="job-single-d">
                     الموقع
